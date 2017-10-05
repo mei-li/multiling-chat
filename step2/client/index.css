@@ -1,0 +1,39 @@
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+}
+#origin {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
+#viewport {
+    width: 100vmin;
+    height: 100vmin;
+    position: absolute;
+    top: -50vmin;
+    left: -50vmin;
+    background-color: #fff;
+}
+#textarea{
+    position: absolute;
+    width: 100vmin;
+    bottom: -49vmin;
+    left: -50vmin;
+}
+#textbox {
+    width: 100%;
+    margin-bottom: 0.3em;
+    text-align: center;
+    padding-top: auto;
+}
+#typebox {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
