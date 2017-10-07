@@ -1,9 +1,10 @@
 # coding: utf-8
 import requests
+import os
 
 
 def translate_text(text, target_lang):
-    KEY = 'API_KEY' # this API_KEY will be disabled after the workshop
+    KEY = os.getenv('TRANSLATE_API_TOKEN', 'FAKE_TOKEN')
     response = requests.post(
         'https://translation.googleapis.com/language/translate/v2?key=' + KEY,
         data={'q': text, 'target': target_lang})

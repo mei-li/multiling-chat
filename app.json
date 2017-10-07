@@ -1,0 +1,16 @@
+{
+  "name": "Multilingual chat",
+  "description": "Multilingual chat with Tornado and Google Translate API",
+  "repository": "https://github.com/meili/multilingual-chat",
+  "keywords": [
+    "python",
+    "tornado",
+    "translate",
+    "chat"
+  ],
+  "env": {
+    "TRANSLATE_API_TOKEN": {
+      "description": "Google Translate API KEY."
+    }
+  }
+}
