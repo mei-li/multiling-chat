@@ -3,7 +3,11 @@
 // ----------
 
 // websocket connection for talking to the server
-var server = new WebSocket("ws://" + location.host + "/connect");
+
+if (location.protocol.indexOf("https") >= 0)
+    var server = new WebSocket("wss://" + location.host + "/connect");
+else
+    var server = new WebSocket("ws://" + location.host + "/connect");
 
 // code to run when our websocket connects
 server.onopen = function() {
