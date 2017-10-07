@@ -32,6 +32,7 @@ def message_all(message):
     for connection in client_connections:
         if connection.lang:
              message['message'] = translate_text(original, connection.lang)
+             print("Translated message before sending to ", message)
         m = json.dumps(message)
         connection.write_message(m)
     print("messaged {} clients".format(len(client_connections)))
@@ -82,13 +83,13 @@ class ClientSocket(tornado.websocket.WebSocketHandler):
         self.color = '#'
         for i in range(3):
             self.color += hex(random.randint(0,13))[2:]
-        
+
         # assign a nickname
         self.nickname = str(self.request.remote_ip)
-    
+        self.lang = None
+
     def on_message(self, message):
         """Called when a websocket client sends a message."""
-        
         # print the message to the console
         print("client sent: {!r}".format(message))
         
