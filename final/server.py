@@ -35,6 +35,8 @@ def message_all(message):
         if connection.lang:
              message['message'] = translate_text(original, connection.lang)
              print("Translated message before sending to ", message)
+        else:
+            message['message'] = original
         m = json.dumps(message)
         connection.write_message(m)
     print("messaged {} clients".format(len(client_connections)))
