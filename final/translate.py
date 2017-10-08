@@ -12,6 +12,9 @@ def translate_text(text, target_lang):
     data = response.json()
     if 'data' in data:
         return response.json()['data']['translations'][0]['translatedText']
+    # in case the API Key is not filled
+    if data.get('error') and 'API key not valid' in data['error']['message']:
+        raise Exception("APIKey Invalid, please add the correct key!")
     return text
 
 
