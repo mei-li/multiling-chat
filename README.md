@@ -46,8 +46,9 @@ Test:
     py.test translate.py
 
 Resources:
-    Translate API docs: https://cloud.google.com/translate/docs/translating-text
-    requests library docs (POST method): http://docs.python-requests.org/en/master/user/quickstart/#make-a-request
+    
+   - Translate API docs: https://cloud.google.com/translate/docs/translating-text
+   - requests library docs (POST method): http://docs.python-requests.org/en/master/user/quickstart/#make-a-request
 
 
 Step 1: Set language command 
@@ -66,7 +67,7 @@ Run server: (run server and test manually)
 
 Step 2: Translate to user language 
 ----------------------------------
-Go to step2 directory. Replace the correct `API_KEY` in `translate.py`. Now in `server.py` edit `message_all` to 
+Go to step2 directory. Replace the correct `API_KEY` in `translate.py`. Now open `server.py` and edit `message_all` to 
 translate the text to each connection language before sending it. Use `translate_text` function that is already imported.
 
 
@@ -78,7 +79,7 @@ Yei!! you should have a multilingual chat application running now, like in `fina
     TRANSLATE_API_TOKEN=... python server.py
 
 If you want more you can look at the extra steps or checkout the original application of last 
-PyLadies workshop (by Thomas Iorns) that is base code of this session and supports additionally 
+PyLadies workshop (by Thomas Iorns) that is the base code of this session and supports additionally 
 shared drawing!! (connect two users and then click in the white area of the page to draw)
 
     git clone https://github.com/mesilliac/multitude.git
@@ -89,6 +90,7 @@ Extras
 * Make sure the language that the user sets is valid, check https://cloud.google.com/translate/docs/discovering-supported-languages (tip: call the API only once)
 * Sent also the original/untranslated text to all users as a command_message
 * Click on deploy to heroku button on top to deploy a cloud version of the application
+
 
 
 Next steps
