@@ -1,5 +1,8 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+Presentation
+https://docs.google.com/presentation/d/14fNHXKKIBnz0icLOQummEuuKk-YazkqYkC6RkmooZdA/edit?usp=sharing
+
 Multilingual chat application
 =============================
 This is a application and workshop/exercise to extend a chat application with Tornado to tranlate user messages.
