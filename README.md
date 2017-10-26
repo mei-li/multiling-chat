@@ -1,7 +1,7 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Presentation
-https://docs.google.com/presentation/d/14fNHXKKIBnz0icLOQummEuuKk-YazkqYkC6RkmooZdA/edit?usp=sharing
+[Presentation link](https://docs.google.com/presentation/d/14fNHXKKIBnz0icLOQummEuuKk-YazkqYkC6RkmooZdA/edit?usp=sharing "Presentation link")
+
 
 Multilingual chat application
 =============================
